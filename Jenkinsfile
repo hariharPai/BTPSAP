@@ -5,6 +5,7 @@ node() {
         setupCommonPipelineEnvironment script:this
     }
     stage('build') {
+        print("In the build Step")
         mtaBuild script: this
   }
   stage('deploy') {
